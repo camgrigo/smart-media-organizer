@@ -1,20 +1,20 @@
 # smart-media-organizer
 Lightweight AI-powered media manager for photos and videos. Organizes files with auto-tagging, metadata, and search via FastAPI + React
 
----
+## Goals
+- Organize photos with metadata + AI tags
+- Search by filename, date, or AI-generated tags
+- Simple web UI (React + Tailwind)
 
-## Features
-- 📸 **Photo & Video support**  
-- 🧠 **AI auto-tagging** (BLIP/CLIP for images, extendable to videos)  
-- 🔎 **Searchable metadata** (filename, tags, date)  
-- 🌐 **FastAPI backend** + **React frontend**  
-- 💾 **SQLite database** for lightweight storage  
+## Stack
+- Backend: FastAPI + SQLite
+- AI Tagging: Hugging Face (BLIP/CLIP)
+- Frontend: React
+- Version Control: GitHub
 
----
-
-## Tech Stack
-- **Backend:** Python, FastAPI, SQLAlchemy  
-- **AI:** Hugging Face Transformers (CLIP/BLIP)  
-- **Database:** SQLite  
-- **Frontend:** React + Tailwind CSS  
-- **Version Control:** GitHub  
+## Getting Started
+```bash
+# Backend
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
